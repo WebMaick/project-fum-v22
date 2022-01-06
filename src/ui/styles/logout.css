@@ -1,0 +1,25 @@
+@media screen and (min-width: 768px) {
+  .log__container {
+    padding: 1rem 0;
+  }
+
+  .logout__content {
+    width: 500px;
+  }
+
+  .form__group-tablet {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+  }
+
+  .form__btns-logout {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .form__btns-logout button {
+    width: 45%;
+  }
+}

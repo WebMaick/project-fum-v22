@@ -1,6 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import "./styles.scss"
+import "./normilize.css"
+import "./globales.css"
 import { AppFum } from "./AppFum"
 import reportWebVitals from "./reportWebVitals"
 

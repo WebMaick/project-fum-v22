@@ -1,4 +1,4 @@
-import React from "react"
+import "./styles/login.css"
 import { Link } from "react-router-dom"
 import logofum from "../assets/svg/logo.svg"
 import submit from "../assets/svg/submit.svg"
@@ -9,24 +9,26 @@ export const Login = () => {
   }
 
   return (
-    <div className="login__container">
-      <div className="login__content">
-        <img src={logofum} alt="logo-fum" />
+    <div className="log__container">
+      <div className="log__content">
+        <img className="log__content-img" src={logofum} alt="logo-fum" />
         <form onSubmit={handleSubmit}>
-          <h2 className="login__title">Iniciar Sesión</h2>
-          <div className="login__form-group">
-            <label htmlFor="email">Email</label>
+          <h2 className="log__title">
+            <span>[</span> Iniciar Sesión <span>]</span>
+          </h2>
+          <div className="form-group">
+            <label htmlFor="cedula">Número de CI</label>
             <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Ej. fum@gmail.com"
+              type="number"
+              name="cedula"
+              id="cedula"
+              placeholder="Ej. 4870000"
               autoComplete="off"
               autoFocus
             />
           </div>
 
-          <div className="login__form-group">
+          <div className="form-group">
             <label htmlFor="password">Password</label>
             <input
               type="password"
@@ -37,17 +39,17 @@ export const Login = () => {
             />
           </div>
 
-          <div className="login__form-btns">
+          <div className="form__btns">
             <button className="btn btn__danger" type="submit">
               <span>ACCEDER</span>
               <img src={submit} alt="logo-submit" />
             </button>
           </div>
 
-          <div className="login__form-desc">
+          <div className="form__desc">
             <p>
               No tienes una Cuenta?
-              <Link className="login__form-reg" to="/logout">
+              <Link className="form__reg" to="/logout">
                 Registrate
               </Link>
             </p>
