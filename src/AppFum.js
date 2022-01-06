@@ -1,9 +1,10 @@
 import React from "react"
+import { RutaPrincipal } from "./routes/RutaPrincipal"
 
 export const AppFum = () => {
   return (
-    <div>
-      <h2>Bienvenido A FUM</h2>
-    </div>
+    <>
+      <RutaPrincipal />
+    </>
   )
 }

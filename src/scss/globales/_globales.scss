@@ -19,14 +19,15 @@ html {
   font-family: "Oswald", sans-serif;
   scroll-behavior: smooth;
   font-size: 16px;
-  position: relative;
 }
 
 body {
   background-color: $bg-color;
-  margin: 0;
+  color: $text-color;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
+  position: relative;
 }
 
 body::-webkit-scrollbar {
